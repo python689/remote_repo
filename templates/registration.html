@@ -1,0 +1,52 @@
+<html>
+<head>
+    <title>Registration Form</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <style>
+        .jumbotron{
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSKcVUyJ0ka1pxbvKzHgzV6-FLW7X8P9nR4EIZ1L5PC9u-d37UU");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: white;
+            margin-top: 50px;
+            margin-left: 200px;
+            margin-right: 200px;
+        }
+        body{
+            font-family: cursive;
+            background-image:url("https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    </style>
+</head>
+<body>
+<div class="contanier">
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="offset-md-3">
+                    <form method="POST">
+                        {% csrf_token %}
+                        <h2>Please Register Your Account...</h2>
+                        {{ rform }}<br>
+                <center>
+                    <input type="submit" value="SingUp" class="btn btn-success">
+                    <input type="reset" value="clear" class="btn btn-danger"><br>
+                    <a href="/login/">Login Page</a>
+                </center>
+            </form>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+</body>
+</html>
